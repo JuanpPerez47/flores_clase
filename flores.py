@@ -66,7 +66,7 @@ with st.spinner('Modelo está cargando..'):
 
 
 with st.sidebar:
-        st.image('rosa.jpg')
+        st.image('rosa.jpeg')
         st.title("Reconocimiento de imagen")
         st.subheader("Reconocimiento de imagen para flores")
 
