@@ -69,8 +69,9 @@ with st.sidebar:
         st.image('rosa.jpeg')
         st.title("Reconocimiento de imagen")
         st.subheader("Reconocimiento de imagen para flores")
+        confianza=st.slider("Seleccione el nivel de Confianza",0,100,50)/100
 
-st.image('logo.png')
+st.image('logo.jpg')
 st.title("Smart Regions Center")
 st.write("Somos un equipo apasionado de profesionales dedicados a hacer la diferencia")
 st.write("""
@@ -110,7 +111,7 @@ else:
     
     # Mostrar el resultado
 
-    if np.max(score)>0.5:
+    if np.max(score)>confianza:
         st.subheader(f"Tipo de Flor: {class_name}")
         st.text(f"Puntuación de confianza: {100 * np.max(score):.2f}%")
     else:
