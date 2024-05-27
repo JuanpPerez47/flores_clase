@@ -1,2 +1,2 @@
 tensorflow=2.15
-streamlit
+streamlit=1.31.1
